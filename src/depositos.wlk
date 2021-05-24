@@ -12,4 +12,5 @@ class Deposito {
 	method bicisLargas() { return col.filter({b => b.largo() > 170}) }
 	method cargaTotalDeBicisLargas() { return self.bicisLargas().sum({b => b.carga()}) }
 	method bicisSinAccesorios() { return col.count({b => b.sinAccesorios()}) }
+	method companieras(bici) { return col.filter({b => b.bicisCompanieras(bici)}) }
 }
