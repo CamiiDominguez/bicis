@@ -20,3 +20,5 @@ class MorralDeBici {
 	method carga() { return largo / 3 }
 	method luminoso() { return tieneOjoDeGato }
 }
+
+/* Para agregar nuevos tipos de accesorios deberíamos crear las clases deseadas respetando los métodos que ya tenemos, de forma que se mantenga el polimorfismo y contrato. */

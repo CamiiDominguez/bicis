@@ -14,5 +14,5 @@ class Bici {
 	method tieneLuz() { return accesorios.any({a => a.luminoso()}) }
 	method accesoriosLivianos() { return accesorios.count({a => a.peso() < 1})}
 	method sinAccesorios() { return accesorios.size() == 0 }
-	method bicisCompanieras(bici) { return self.marca() == bici.marca() and self.largo() - bici.largo() <= 10 and self != bici }
+	method bicisCompanieras(bici) { return self.marca() == bici.marca() and self.largo() - bici.largo() <= 10 and self != bici } 
 }
