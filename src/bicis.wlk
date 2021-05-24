@@ -13,4 +13,5 @@ class Bici {
 	method peso() { return rodado / 2 + accesorios.map({a => a.peso()}).sum() }
 	method tieneLuz() { return accesorios.any({a => a.luminoso()}) }
 	method accesoriosLivianos() { return accesorios.count({a => a.peso() < 1})}
+	method sinAccesorios() { return accesorios.size() == 0 }
 }
