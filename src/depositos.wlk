@@ -5,7 +5,7 @@ class Deposito {
 	const property col = []
 	
 	method rapidas() { return col.filter({bici => bici.velocidadDeCrucero() > 25}) }
-	method marca() { return col.map({bici => bici.marca()}) }
+	method marca() { return col.map({bici => bici.marca()}).asSet() }
 	method nocturno() { return col.all({bici => bici.tieneLuz()}) }
 	method soportaCargaPesada(kilos) { return col.any({b => b.carga() > kilos}) }
 	method marcaMasRapida() { return col.max({b => b.velocidadDeCrucero()}).marca() }
